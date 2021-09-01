@@ -1,6 +1,12 @@
+import 'package:bmi_calculator/screens/result.dart';
+import 'package:bmi_calculator/screens/suggestions4.dart';
 import 'package:flutter/material.dart';
-import 'input.dart';
+import 'screens/input.dart';
 import 'package:flutter/services.dart';
+
+import 'screens/suggestions1.dart';
+import 'screens/suggestions2.dart';
+import 'screens/suggestions3.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +22,15 @@ class BMICalculator extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
           primaryColor: Color(0xFF0A0E21),
           scaffoldBackgroundColor: Color(0xFF0A0E21)),
-      home: InputPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => InputPage(),
+        '/result': (context) => ResultPage(),
+        '/suggestions1': (context) => SuggestionsPage1(),
+        '/suggestions2': (context) => SuggestionsPage2(),
+        '/suggestions3': (context) => SuggestionsPage3(),
+        '/suggestions4': (context) => SuggestionsPage4(),
+      },
     );
   }
 }

@@ -37,4 +37,28 @@ class CalculatorBrain {
       return 'You have a lower than normal body weight. You can eat a bit more!';
     }
   }
+
+  int suggestionNumber() {
+    if (_bmi >= 30) {
+      return 1;
+    } else if (_bmi >= 25 && _bmi < 30) {
+      return 2;
+    } else if (_bmi >= 18.5 && _bmi < 25) {
+      return 3;
+    } else {
+      return 4;
+    }
+  }
+
+  int soundNumber() {
+    if (_bmi >= 30) {
+      return 1;
+    } else if (_bmi >= 25 && _bmi < 30) {
+      return 2;
+    } else if (_bmi >= 18.5 && _bmi < 25) {
+      return 3;
+    } else {
+      return 4;
+    }
+  }
 }

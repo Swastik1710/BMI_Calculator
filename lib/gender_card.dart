@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 
 class GenderCard extends StatelessWidget {
   final String gender;
-  final IconData icon;
+  final String img;
 
-  GenderCard({this.gender, this.icon});
+  GenderCard({this.gender, this.img});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Icon(
-          icon,
-          size: 60,
+        Image(
+          image: AssetImage('assets/$img.png'),
+          color: Colors.white,
+          height: 60,
         ),
         SizedBox(
           height: 20,
