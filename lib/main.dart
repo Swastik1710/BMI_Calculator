@@ -3,7 +3,7 @@ import 'package:bmi_calculator/screens/suggestions4.dart';
 import 'package:flutter/material.dart';
 import 'screens/input.dart';
 import 'package:flutter/services.dart';
-
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'screens/suggestions1.dart';
 import 'screens/suggestions2.dart';
 import 'screens/suggestions3.dart';
@@ -20,8 +20,9 @@ class BMICalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-          primaryColor: Color(0xFF0A0E21),
-          scaffoldBackgroundColor: Color(0xFF0A0E21)),
+        primaryColor: Color(0xFF0A0E21),
+        scaffoldBackgroundColor: Color(0xFF0A0E21),
+      ),
       initialRoute: '/',
       routes: {
         '/': (context) => InputPage(),

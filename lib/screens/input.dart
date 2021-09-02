@@ -148,6 +148,7 @@ class _InputPageState extends State<InputPage> {
                                     style: TextStyle(
                                       fontSize: 50,
                                       fontWeight: FontWeight.w900,
+                                      color: Colors.tealAccent,
                                     ),
                                   ),
                                   Row(
@@ -209,6 +210,7 @@ class _InputPageState extends State<InputPage> {
                                           style: TextStyle(
                                             fontSize: 50,
                                             fontWeight: FontWeight.w900,
+                                            color: Colors.tealAccent,
                                           ),
                                         ),
                                         Row(

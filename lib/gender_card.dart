@@ -13,7 +13,7 @@ class GenderCard extends StatelessWidget {
       children: <Widget>[
         Image(
           image: AssetImage('assets/$img.png'),
-          color: Colors.white,
+          color: Colors.tealAccent,
           height: 60,
         ),
         SizedBox(

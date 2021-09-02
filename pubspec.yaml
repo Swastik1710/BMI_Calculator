@@ -18,6 +18,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^1.2.1
+
+flutter_native_splash:
+  color: "#0A0E21"
+  image: assets/splashIcon.png
 
 flutter:
   uses-material-design: true
